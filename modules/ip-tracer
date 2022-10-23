@@ -1,0 +1,13 @@
+# Tool Name :- IP-Tracer plus
+# Author :- Rajkumar Dusad
+# Co-Author And Re Mod :- JaniduXxX
+# Date :- 20.10.2022
+# Owner Of SLR GanZ
+
+if [ -d /data/data/com.termux/files/usr/share ];then
+  cd /data/data/com.termux/files/usr/share/IP-Tracer
+  exec bash trace $@
+elif [ -d /usr/share ];then
+  cd /usr/share/IP-Tracer
+  exec bash trace $@
+fi
